@@ -1,0 +1,108 @@
+---
+import Project from "../components/Project.astro";
+import SectionHeader from "@components/SectionHeader.astro";
+import ImageProyecto1 from "../assets/img/imagen.png";
+import ImageProyecto2 from "../assets/img/imagen2.png";
+import ImageProyecto3 from "../assets/img/imagen3.png";
+import ImageProyecto4 from "../assets/img/imagen4.png";
+import ImageProyecto5 from "../assets/img/imagen5.png";
+import ImageProyecto6 from "../assets/img/imagen6.png";
+import ImageProyecto7 from "../assets/img/imagen7.png";
+import ImageProyecto8 from "../assets/img/imagen8.png";
+// import ImageProyecto4 from "../assets/img/imagen4.png";
+import ImageProyecto10 from "../assets/img/imagen10.png";
+---
+
+<section
+  id="projects"
+  class="w-10/12 mx-auto flex flex-col justify-center items-center mt-10 md:items-center md:justify-start lg:items-start lg:mt-28 lg:flex-col"
+>
+  <SectionHeader title={"Proyectos"}>
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="mr-2"
+      ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+        d="M7 8l-4 4l4 4"></path><path d="M17 8l4 4l-4 4"></path><path
+        d="M14 4l-4 16"></path></svg
+    >
+  </SectionHeader>
+
+  <div class="mt-16">
+    <Project
+      image={ImageProyecto1}
+      links="https://edm1ya.github.io/Web-Personal/"
+      title="Página Web Personal"
+      description="Muestra mis datos biográficos y horario de clases en este semestre 2024-20"
+    />
+
+    <Project
+      image={ImageProyecto2}
+      links="https://edm1ya.github.io/Etiquetas-HTML/"
+      title="Etiquetas HTML"
+      description="Muestras 102 etiquetas difernetes utilizadas en HTML con sus ejemplos"
+    />
+
+    <Project
+      image={ImageProyecto3}
+      links="https://edm1ya.github.io/Estructura-Menu/"
+      title="Estructura de un menú usando CSS"
+      description="Estructura de un menú usando HTML y CSS inspirado en la pagina de inicio del Banco Banreservas"
+    />
+
+    <Project
+      image={ImageProyecto4}
+      links="https://edm1ya.github.io/Identity-Card-Validator/"
+      title="Algoritmo de módulo 10"
+      description="Este es un formulario que valida con el algoritmo módulo 10 que valida si un número de identidad es válido o no"
+    />
+
+    <Project
+      image={ImageProyecto5}
+      links="https://edm1ya.github.io/menu-dinamico-json/"
+      title="Menú dinámico con JSON"
+      description="Este es un formulario que carga de manera dinamica el titulo y un enlace y lo pinta como parte del navbar"
+    />
+
+    <Project
+      image={ImageProyecto6}
+      links="https://edm1ya.github.io/multiply-form/"
+      title="Formulario con múltiples páginas"
+      description="Este es un formulario que maneja multiples paginas sin recargar la pagina directamente y al final devuelve un json con toda la data suministrada"
+    />
+
+    <Project
+      image={ImageProyecto7}
+      links="https://extraordinary-mochi-42a9f1.netlify.app/"
+      title="Generados de Codigo QR de contacto"
+      description="Formulario que genera un Codigo QR de contacto con los datos suministrados"
+    />
+
+    <Project
+      image={ImageProyecto8}
+      links="https://edm1ya.github.io/graficos-form/"
+      title="Formulario que integra una librería para realizar gráficos"
+      description="Este es un Registro de Ventas Mensuales en el cual puedes ingresa y elminar registros del mes con su numero de ventas y este actualiza el gráfico"
+    />
+
+    <Project
+      image={ImageProyecto6}
+      links="https://form-db-phi.vercel.app/"
+      title="Formulario con Acceso a BD"
+      description="Este es un formulario que registra usuarios y sus datos en una base de datos"
+    />
+
+    <Project
+      image={ImageProyecto10}
+      links="https://cedula-validator-service-production.up.railway.app/"
+      title="Servicio Web para validar la cédula de identidad y electoral"
+      description="Esta es una API que valida  mediante una peticion tipo POST la cédula de identidad y electoral de un usuario"
+    />
+  </div>
+</section>
