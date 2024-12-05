@@ -5,5 +5,5 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind()],
   site: 'https://Edm1ya.github.io',
-  base: '/portfolio-programacion-III',
+  base: 'portfolio-programacion-III',
 });
