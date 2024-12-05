@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
-import vercel from '@astrojs/vercel';
+import vercelStatic from '@astrojs/vercel/static';
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,6 +13,6 @@ export default defineConfig({
   },
 
   integrations: [tailwind()],
-  output: 'server',
-  adapter: vercel(),
+  output: 'static',
+  adapter: vercelStatic(),
 });
