@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
-import vercel from '@astrojs/vercel/serverless';
+import vercel from '@astrojs/vercel';
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,8 +13,6 @@ export default defineConfig({
   },
 
   integrations: [tailwind()],
-  site: 'https://edmiyadev.github.io',
-  base: 'portfolio-astro',
   output: 'server',
   adapter: vercel()
 });
